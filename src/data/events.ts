@@ -1,0 +1,132 @@
+import type { EventPost, Notice, FAQ, PopupConfig, MarketPost } from '@/types'
+
+export const events: EventPost[] = [
+  {
+    id: 'ev001',
+    title: '3월 트리플 혜택 이벤트',
+    content: '전품목 할인 + Set상품 추가할인 + 5mL 튜브 키링증정! 3월 한 달간 진행되는 특별 프로모션에 참여하세요.',
+    thumbnail: '/images/events/march-event.jpg',
+    startDate: '2026-03-01',
+    endDate: '2026-03-31',
+    isActive: true,
+    createdAt: '2026-02-25',
+  },
+  {
+    id: 'ev002',
+    title: 'BANDIO Bio Science 이달의 브랜드',
+    content: 'BANDIO Bio Science 전 제품 특별 할인! 이달의 브랜드로 선정된 BANDIO 제품을 만나보세요.',
+    thumbnail: '/images/events/bandio-brand.jpg',
+    startDate: '2026-03-01',
+    endDate: '2026-03-31',
+    isActive: true,
+    createdAt: '2026-02-28',
+  },
+  {
+    id: 'ev003',
+    title: 'Eppendorf 피펫 세트 할인전',
+    content: 'Eppendorf Research plus 피펫 3개 세트 구매 시 15% 추가 할인! 교정 서비스 무료 제공.',
+    thumbnail: '/images/events/eppendorf-set.jpg',
+    startDate: '2026-03-10',
+    endDate: '2026-04-10',
+    isActive: true,
+    createdAt: '2026-03-08',
+  },
+  {
+    id: 'ev004',
+    title: '신규 회원 가입 이벤트',
+    content: '신규 회원 가입 시 5,000원 적립금 즉시 지급! 첫 구매 시 무료배송 쿠폰도 함께 드립니다.',
+    thumbnail: '/images/events/new-member.jpg',
+    startDate: '2026-01-01',
+    endDate: '2026-12-31',
+    isActive: true,
+    createdAt: '2026-01-01',
+  },
+]
+
+export const notices: Notice[] = [
+  { id: 'n001', title: '[공지] 2026년 3월 배송 안내', content: '3월 설 연휴 기간 배송이 지연될 수 있습니다. 양해 부탁드립니다.', isImportant: true, views: 342, createdAt: '2026-02-28' },
+  { id: 'n002', title: '[안내] 개인정보 처리방침 변경 안내', content: '2026년 3월 1일부로 개인정보 처리방침이 변경됩니다.', isImportant: true, views: 189, createdAt: '2026-02-20' },
+  { id: 'n003', title: '[공지] 시스템 점검 안내 (3/15)', content: '3월 15일(토) 02:00~06:00 시스템 점검이 진행됩니다.', isImportant: false, views: 98, createdAt: '2026-03-10' },
+  { id: 'n004', title: '[안내] 신규 브랜드 입점 안내 - BANDIO', content: 'BANDIO Bio Science 제품이 입점되었습니다.', isImportant: false, views: 256, createdAt: '2026-03-01' },
+  { id: 'n005', title: '[공지] 대리점 모집 안내', content: '전국 대리점을 모집합니다. 자세한 사항은 고객센터로 문의해주세요.', isImportant: false, views: 412, createdAt: '2026-02-15' },
+]
+
+export const faqs: FAQ[] = [
+  { id: 'f001', category: '주문/결제', question: '주문 후 결제는 어떻게 하나요?', answer: '주문 시 카드결제, 계좌이체, 가상계좌 등 다양한 결제수단을 이용하실 수 있습니다.' },
+  { id: 'f002', category: '배송', question: '배송은 얼마나 걸리나요?', answer: '기본배송은 평균 1~3일 이내 발송됩니다. (주말 및 공휴일 제외) 당일출고 상품은 오후 3시 이전 주문 및 결제 완료 건에 한하여 당일 출고됩니다.' },
+  { id: 'f003', category: '배송', question: '배송비는 얼마인가요?', answer: '개인고객은 주문 금액 100,000원 이상 무료배송입니다. 딜러고객은 주문자 배송비 부담, 제품 크기에 따라 개별배송비가 적용됩니다.' },
+  { id: 'f004', category: '교환/반품', question: '교환/반품은 어떻게 하나요?', answer: '상품 배송 완료 후 14일 이내에 하자가 없는 경우, 포장상태에 이상이 없고 사용흔적이 없으며 재판매가 가능한 경우 교환/반품이 가능합니다.' },
+  { id: 'f005', category: '회원', question: '업체 회원과 일반 회원의 차이가 무엇인가요?', answer: '업체 회원은 사업자 등록증을 통해 인증된 기업 회원으로, 업체 전용 할인가로 구매하실 수 있습니다.' },
+  { id: 'f006', category: '회원', question: '대리점 계약은 어떻게 하나요?', answer: '대리점 계약은 별도 문의가 필요합니다. 고객센터(053-292-4574)로 연락 주시면 안내해 드리겠습니다.' },
+  { id: 'f007', category: 'A/S', question: 'A/S는 어떻게 받나요?', answer: 'JoaLab에서 구매하신 기기 고장 및 불량이 의심될 경우 사전접수 후 A/S가 가능합니다. A/S접수 → 수리제품발송 → 상태및견적확인 → 수리진행 → 임금확인후발송 순서로 진행됩니다.' },
+  { id: 'f008', category: '교정', question: '피펫 교정 서비스를 받을 수 있나요?', answer: 'KOLAS 공인교정기관을 통한 교정 서비스를 제공합니다. 교정여부를 옵션에서 선택하시면 교정성적서가 발급됩니다.' },
+]
+
+export const popups: PopupConfig[] = [
+  {
+    id: 'popup001',
+    title: '3월 트리플 혜택',
+    imageUrl: '/images/popups/march-event-popup.jpg',
+    linkUrl: '/event/ev001',
+    isActive: true,
+    startDate: '2026-03-01',
+    endDate: '2026-03-31',
+    position: { top: 100, left: 50 },
+    size: { width: 500, height: 600 },
+  },
+]
+
+export const marketPosts: MarketPost[] = [
+  {
+    id: 'm001',
+    title: 'Chembio Vortex Mixer 가변속도 판매',
+    content: '2024년 구매, 사용감 적음. 상태 양호. 직거래 선호합니다.',
+    category: 'chembio-equipment',
+    condition: '중고',
+    price: 150000,
+    images: ['/images/market/used-vortex.jpg'],
+    author: '김연구',
+    phone: '010-****-1234',
+    views: 45,
+    createdAt: '2026-03-15',
+  },
+  {
+    id: 'm002',
+    title: '실험실 해체 - 글러브, 팁 등 소모품 일괄 판매',
+    content: '실험실 이전으로 인해 미개봉 소모품을 일괄 판매합니다. 글러브 10박스, CB Universal Tips 20백 등.',
+    category: 'pipette-tips',
+    condition: '새것',
+    price: 500000,
+    images: ['/images/market/lab-consumables.jpg'],
+    author: '박실험',
+    phone: '010-****-5678',
+    views: 128,
+    createdAt: '2026-03-12',
+  },
+  {
+    id: 'm003',
+    title: 'Centrifuge Tubes 15mL (미개봉 20 Rack)',
+    content: '주문 실수로 과잉 구매. 미개봉 상태. 일괄 판매합니다.',
+    category: 'tubes',
+    condition: '새것',
+    price: 140000,
+    images: ['/images/market/tubes-bulk.jpg'],
+    author: '이실험',
+    phone: '010-****-9012',
+    views: 67,
+    createdAt: '2026-03-10',
+  },
+  {
+    id: 'm004',
+    title: 'Cryo Box 5x5 / Freezer Rack 일괄 판매',
+    content: '극저온 보관 장비 일괄 판매. Cryo Box 20개 + Freezer Rack 4개 세트.',
+    category: 'others',
+    condition: '중고',
+    price: 80000,
+    images: ['/images/market/cryo-set.jpg'],
+    author: '최과학',
+    phone: '010-****-3456',
+    views: 34,
+    createdAt: '2026-03-08',
+  },
+]
